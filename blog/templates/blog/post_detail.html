@@ -25,12 +25,11 @@
 <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
 {% if user.is_authenticated %}
 {% for comment in post.comments.all %}
-
           <div class="comment">
                   <div class="date">
-                    <small>  {{ comment.created_date }}</small><br>
-                     <p>{{ comment.text }}</p>
-           <small>{{ comment.author }}</small><br>
+                    <p style="color:#0000FF"><small>  {{ comment.created_date }}</small><br></p>
+                    <a style="color:#0000FF"> <p>{{ comment.text }}</p></a>
+        <p style="color:#0000FF">   <small>{{ comment.author }}</small><br></p>
            <small><a href="{% url 'comment_remove' comment.pk  %}">delete</a></small>
     {% empty %}
 

@@ -138,3 +138,566 @@ django.template.exceptions.TemplateDoesNotExist: toastmessages_fragment.html
 2022-06-09 12:01:01,488 django.utils.autoreload INFO     C:\Users\GundyaevKirusha\djangogirls\mysite\settings.py changed, reloading.
 2022-06-09 12:09:01,650 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2022-06-09 12:09:17,500 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 12:45:52,436 django.utils.autoreload INFO     C:\Users\GundyaevKirusha\djangogirls\blog\views.py changed, reloading.
+2022-06-09 12:45:53,426 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 12:46:51,118 django.utils.autoreload INFO     C:\Users\GundyaevKirusha\djangogirls\blog\views.py changed, reloading.
+2022-06-09 12:46:58,620 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 12:47:12,657 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 12:47:35,868 django.utils.autoreload INFO     C:\Users\GundyaevKirusha\djangogirls\blog\views.py changed, reloading.
+2022-06-09 12:47:36,701 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 12:47:38,495 django.request WARNING  Not Found: /post/15/css/jquery.toastmessage.css
+2022-06-09 12:47:38,715 django.request WARNING  Not Found: /favicon.ico
+2022-06-09 12:47:40,845 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 12:57:26,394 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 12:58:17,640 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 12:58:20,533 django.request WARNING  Not Found: /favicon.ico
+2022-06-09 13:01:37,792 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:02:05,552 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 13:02:13,362 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:03:12,697 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:03:14,804 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:04:25,593 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:04:46,789 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 13:04:48,463 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:04:50,035 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:04:50,556 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:06:13,464 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:06:39,157 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:07:09,343 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: "'images/1.jpg'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: ''images/1.jpg''. Did you forget to register or load this tag?
+2022-06-09 13:07:31,222 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: '"images/1.jpg"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: '"images/1.jpg"'. Did you forget to register or load this tag?
+2022-06-09 13:07:31,941 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: '"images/1.jpg"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: '"images/1.jpg"'. Did you forget to register or load this tag?
+2022-06-09 13:07:42,188 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: '"images/1.jpg"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: '"images/1.jpg"'. Did you forget to register or load this tag?
+2022-06-09 13:07:49,277 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'staticfiles"images/1.jpg"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'staticfiles"images/1.jpg"'. Did you forget to register or load this tag?
+2022-06-09 13:07:53,525 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'static"images/1.jpg"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static"images/1.jpg"'. Did you forget to register or load this tag?
+2022-06-09 13:08:11,061 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:08:16,919 django.request WARNING  Not Found: /post/11/css/jquery.toastmessage.css
+2022-06-09 13:08:19,967 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:09:26,548 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:13:13,685 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:15:04,040 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:15:34,902 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:15:35,650 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:15:52,325 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:15:54,276 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:15:59,460 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:16:05,362 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:16:38,031 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:17:13,868 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:17:14,360 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:17:15,491 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:17:15,860 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:17:16,459 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:17:57,348 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:17:58,013 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:18:48,949 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:18:49,051 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:18:54,150 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:18:54,231 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:18:54,776 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:18:54,850 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:25,614 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:25,694 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:26,145 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:26,221 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:52,019 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:52,041 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:19:52,135 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:52,762 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:19:52,766 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:19:52,837 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:20:05,902 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:20:05,924 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:21:17,323 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:21:17,326 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:21:18,430 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:21:18,433 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:21:46,640 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:23:51,839 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:23:51,919 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:23:56,282 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:23:56,364 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:24:02,011 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:24:02,093 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:24:04,422 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:25:00,337 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:25:00,964 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:25:02,120 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:25:02,312 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:25:02,460 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:25:02,599 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:25:02,737 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:26:33,924 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:28:08,418 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:28:09,198 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:29:17,425 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:29:17,553 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:29:29,118 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:29:29,200 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:30:17,953 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:30:37,847 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: '"images/1.jpg"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: '"images/1.jpg"'. Did you forget to register or load this tag?
+2022-06-09 13:30:50,612 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:30:50,703 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:30:59,552 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:07,659 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:17,888 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:20,588 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:21,845 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:32,380 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:33,002 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:39,248 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:52,370 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:54,642 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:31:55,339 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:32:19,270 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:32:20,084 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:32:57,248 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:32:57,337 django.request WARNING  Not Found: /img/1.jpg
+2022-06-09 13:33:08,861 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:33:08,946 django.request WARNING  Not Found: /img/image.jpg
+2022-06-09 13:33:24,930 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:33:25,008 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:33:25,766 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:33:25,849 django.request WARNING  Not Found: /images/1.jpg
+2022-06-09 13:33:36,685 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:33:53,934 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:34:01,201 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:34:09,554 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:34:20,345 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:34:47,346 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:34:48,199 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:35:23,220 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:35:47,528 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:35:48,118 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:37:36,335 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:06,350 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:17,975 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:22,460 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:23,660 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:23,987 django.request WARNING  Not Found: /favicon.ico
+2022-06-09 13:38:32,115 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:32,846 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:37,018 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:44,810 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:38:52,832 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:39:05,374 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:39:13,220 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:39:23,755 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:39:24,547 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:39:45,212 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:39:51,007 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:40:06,665 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:40:21,475 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:40:32,604 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:40:46,371 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:49:59,746 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:50:38,707 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:50:39,249 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:51:02,630 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:51:13,371 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:51:33,993 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:51:34,658 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:51:39,092 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:51:48,680 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:51:55,545 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 13:52:07,072 django.request WARNING  Not Found: /accounts/login/css/jquery.toastmessage.css
+2022-06-09 13:52:17,536 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:04:46,453 django.utils.autoreload INFO     C:\Users\GundyaevKirusha\djangogirls\mysite\settings.py changed, reloading.
+2022-06-09 14:05:31,508 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 14:07:09,189 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 14:12:55,306 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 14:16:14,984 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 14:16:19,564 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:18:17,952 django.request ERROR    Internal Server Error: /post/new/
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 38, in post_new
+    logger.info("Succes!")
+NameError: name 'logger' is not defined
+2022-06-09 14:19:06,532 django.utils.autoreload INFO     C:\Users\GundyaevKirusha\djangogirls\blog\views.py changed, reloading.
+2022-06-09 14:19:07,316 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 14:19:08,978 django.request WARNING  Not Found: /post/new/css/jquery.toastmessage.css
+2022-06-09 14:19:34,807 django.request WARNING  Not Found: /post/20/css/jquery.toastmessage.css
+2022-06-09 14:19:37,573 django.request WARNING  Not Found: /post/20/css/jquery.toastmessage.css
+2022-06-09 14:19:38,738 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:19:50,328 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:22:37,320 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:22:58,063 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:23:09,229 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:23:38,518 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:24:08,907 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:24:13,572 django.request WARNING  Not Found: /post/2/comment/css/jquery.toastmessage.css
+2022-06-09 14:24:56,663 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:25:25,799 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:25:27,496 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:25:34,157 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:25:37,167 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:25:40,390 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:25:42,506 django.request WARNING  Not Found: /post/2/comment/css/jquery.toastmessage.css
+2022-06-09 14:25:56,897 django.request WARNING  Not Found: /post/2/css/jquery.toastmessage.css
+2022-06-09 14:26:25,428 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:28:00,128 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:28:01,042 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:28:11,711 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:28:20,878 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:28:28,097 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:29:30,404 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:29:53,406 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:30:31,602 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:30:46,471 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:32:03,041 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:32:50,381 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:33:08,961 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:33:29,988 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:33:39,200 django.request WARNING  Not Found: /post/3/css/jquery.toastmessage.css
+2022-06-09 14:33:40,563 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 14:37:17,763 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:17,853 django.request WARNING  Bad Request: /
+2022-06-09 14:37:18,470 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:18,510 django.request WARNING  Bad Request: /favicon.ico
+2022-06-09 14:37:19,787 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:19,824 django.request WARNING  Bad Request: /
+2022-06-09 14:37:20,092 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:20,150 django.request WARNING  Bad Request: /favicon.ico
+2022-06-09 14:37:22,201 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:22,238 django.request WARNING  Bad Request: /
+2022-06-09 14:37:22,506 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:22,558 django.request WARNING  Bad Request: /favicon.ico
+2022-06-09 14:37:23,195 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:23,256 django.request WARNING  Bad Request: /
+2022-06-09 14:37:23,528 django.security.DisallowedHost ERROR    Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+2022-06-09 14:37:23,574 django.request WARNING  Bad Request: /favicon.ico
+2022-06-09 14:37:30,396 django.request WARNING  Not Found: /css/jquery.toastmessage.css
