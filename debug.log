@@ -1,0 +1,140 @@
+2022-06-09 06:31:33,504 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 06:33:43,328 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 08:52:47,748 django.request ERROR    Internal Server Error: /post/2/
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 183, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 180, in select_template
+    raise TemplateDoesNotExist(', '.join(not_found))
+django.template.exceptions.TemplateDoesNotExist: toastmessages_fragment.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 25, in post_detail
+    return render(request, 'blog/post_detail.html', {'post': post})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: toastmessages_fragment.html
+2022-06-09 11:04:05,602 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 11:04:21,096 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 183, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 180, in select_template
+    raise TemplateDoesNotExist(', '.join(not_found))
+django.template.exceptions.TemplateDoesNotExist: toastmessages_fragment.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: toastmessages_fragment.html
+2022-06-09 11:04:21,911 django.request WARNING  Not Found: /favicon.ico
+2022-06-09 11:04:27,476 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader_tags.py", line 183, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\engine.py", line 180, in select_template
+    raise TemplateDoesNotExist(', '.join(not_found))
+django.template.exceptions.TemplateDoesNotExist: toastmessages_fragment.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\GundyaevKirusha\djangogirls\blog\views.py", line 21, in post_list
+    return render(request, 'blog/post_list.html', {'posts': posts})
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\GundyaevKirusha\djangogirls\myvenv\lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: toastmessages_fragment.html
+2022-06-09 11:05:28,283 django.request WARNING  Not Found: /css/jquery.toastmessage.css
+2022-06-09 12:01:01,488 django.utils.autoreload INFO     C:\Users\GundyaevKirusha\djangogirls\mysite\settings.py changed, reloading.
+2022-06-09 12:09:01,650 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2022-06-09 12:09:17,500 django.request WARNING  Not Found: /css/jquery.toastmessage.css

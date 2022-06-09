@@ -9,7 +9,7 @@ from .forms import PostForm, CommentForm
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
-
+import logging
 
 class SignUpView(generic.CreateView):
     form_class = UserCreationForm
@@ -31,9 +31,11 @@ def post_new(request):
             post = form.save(commit=False)
             post.author = request.user
             post.save()
+            logger.info("Succes!")
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
+        logger.info("Succes!")
     return render(request, 'blog/post_edit.html', {'form': form})
 @login_required
 def post_edit(request, pk):
@@ -44,6 +46,7 @@ def post_edit(request, pk):
             post = form.save(commit=False)
             post.author = request.user
             post.save()
+            logger.info("Succes!")
             return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm(instance=post)
@@ -52,6 +55,7 @@ def post_edit(request, pk):
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.delete()
+    logger.info("Succes!")
     return redirect('post_list')
 @login_required
 def post_draft_list(request):
@@ -61,6 +65,7 @@ def post_draft_list(request):
 def post_publish(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.publish()
+    logger.info("Succes!")
     return redirect('post_detail', pk=pk)
 
 def publish(self):
@@ -75,17 +80,11 @@ def add_comment_to_post(request, pk):
             comment = form.save(commit=False)
             comment.post = post
             comment.save()
+            logger.info("Succes!")
             return redirect('post_detail', pk=post.pk)
     else:
         form = CommentForm()
     return render(request, 'blog/add_comment_to_post.html', {'form': form})
-
-
-@login_required
-def comment_approve(request, pk):
-    comment = get_object_or_404(Comment, pk=pk)
-    comment.approve()
-    return redirect('post_detail', pk=comment.post.pk)
 
 @login_required
 def comment_remove(request, pk):
